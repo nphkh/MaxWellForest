@@ -38,7 +38,7 @@ const NSString *CLIENT_ID = @"ACAO2JPKM1MXHQJCK45IIFKRFR2ZVL0QASMCBCG5NPJQWF2G";
 - (void)loadCoffeeListWithCurrentLocation:(CLLocation *)currentLocation
                           completionBlock:(void(^)(NSArray *, NSError *))completionBlock
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.foursquare.com/v2/venues/search?client_id=%@&client_secret=%@&v=20130815&ll=%f,%f&query=coffee",
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.foursquare.com/v2/venues/search?client_id=%@&client_secret=%@&v=20150921&ll=%f,%f&query=coffee",
                                        CLIENT_ID,
                                        CLIENT_SECRET,
                                        currentLocation.coordinate.latitude,
